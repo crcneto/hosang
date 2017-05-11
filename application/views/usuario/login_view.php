@@ -1,4 +1,4 @@
-<div class="container-fluid">
+<div class="container">
     <div class="panel panel-primary">
         <div class="panel-heading">
             <div class="panel-title text-center">Entrar no sistema</div>
