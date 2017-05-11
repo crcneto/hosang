@@ -56,15 +56,15 @@
                                     </ul>
                                 </li>
                             
-                                <li class="dropdown">
+                                <!--li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Financeiro <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
                                         <li class="dropdown-header">Carteira</li>
                                         <li role="separator" class="divider"></li>
-                                        <li><a href="<?= base_url() ?>expenses">Despesas</a></li>
+                                        <li><a href="">Despesas</a></li>
 
                                     </ul>
-                                </li>
+                                </li-->
                         <?php } ?>
                     </ul>
 
