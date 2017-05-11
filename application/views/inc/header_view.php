@@ -33,7 +33,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?= site_url() ?>"><span><img src="<?= site_url() ?>public/img/judge.ico" height="20" width="20"/></span>&nbsp;<span>Hosang</span></a>
+                    <a class="navbar-brand" href="<?= site_url() ?>"><span><img src="<?= site_url() ?>public/img/balanca.png" height="20" width="20"/></span>&nbsp;<span>Hosang</span></a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -43,15 +43,16 @@
                         <!--li><a href="#">Link</a></li-->
                         <?php if($this->session->userdata('usuario')) { ?>
                                 <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin <span class="caret"></span></a>
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cadastros <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
-                                        <li class="dropdown-header text-center">Cadastros</li>
-                                        <li role="separator" class="divider"></li>
-                                        <li><a href="<?= site_url('usuario') ?>">Usuário</a></li>
-                                        <li role="separator" class="divider"></li>
+                                        <!--li class="dropdown-header text-center">Cadastro</li>
+                                        <li role="separator" class="divider"></li-->
+                                        <li><a href="<?= site_url('cliente') ?>">Clientes</a></li>
+                                        <li><a href="<?= site_url('usuario') ?>">Usuários</a></li>
+                                        <!--li role="separator" class="divider"></li>
                                         <li class="dropdown-header text-center">Configurações</li>
                                         <li role="separator" class="divider"></li>
-                                        <li><a href="#">Config</a></li>
+                                        <li><a href="#">Config</a></li-->
                                     </ul>
                                 </li>
                             
