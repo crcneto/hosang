@@ -1,3 +1,4 @@
+<?php $user = $this->session->userdata('usuario'); ?>
 <!DOCTYPE html>
 <html lang="br">
     <head>
@@ -40,7 +41,7 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="<?= base_url() ?>">Inicial <span class="sr-only"></span></a></li>
                         <!--li><a href="#">Link</a></li-->
-                        
+                        <?php if($this->session->userdata('usuario')) { ?>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
@@ -63,14 +64,37 @@
 
                                     </ul>
                                 </li>
-                            
+                        <?php } ?>
                     </ul>
 
                     <!--Se usuário não estiver autenticado, exibe formulário de login-->
-                    
+                    <?php if(!$this->session->userdata('usuario')){ ?>
                     <div class="navbar-form navbar-right">
+                        <!--div class="form-group">
+                            <input type="text" name="login" class="form-control" size="8" placeholder="Usuário">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="senha" class="form-control" size="8" placeholder="Senha">
+                        </div>
+                        <button type="submit" class="btn btn-success">Entrar</button-->
                         <a href="<?= site_url('autenticacao') ?>" class="btn btn-success">Entrar</a>
                     </div>
+                    <?php } ?>
+                    <!-- Se usuário autenticado, exibe opções de usuário -->
+                    <?php if ($this->session->userdata('usuario') != NULL) { ?>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="glyphicon glyphicon-user"></i>&nbsp;<?=$user['nome']?> <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Perfil</a></li>
+                                    <li><a href="<?= site_url('usuario/alterar_senha') ?>">Alterar senha</a></li>
+                                    <li><a href="#">Mensageiro</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="<?= site_url('autenticacao/logout') ?>">Sair</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    <?php } ?>
                     
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
