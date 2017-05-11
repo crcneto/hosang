@@ -50,8 +50,8 @@ $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'aplicacao';
-$db['default']['password'] = '';
-$db['default']['database'] = '';
+$db['default']['password'] = 'carvalhos';
+$db['default']['database'] = 'hosang';
 $db['default']['dbdriver'] = 'postgre';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;

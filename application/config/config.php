@@ -23,8 +23,8 @@ date_default_timezone_set( "America/Sao_Paulo" );
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/hosang/';
-//$config['base_url'] = '';
+//$config['base_url'] = 'http://localhost/hosang/';
+$config['base_url'] = '';
 
 /*
 |--------------------------------------------------------------------------
