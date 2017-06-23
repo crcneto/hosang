@@ -5,7 +5,7 @@
         <title>.: Hosang :.</title>
         <link rel="stylesheet" href="<?= site_url('public/css/bootstrap.min.css') ?>" />
         <link rel="stylesheet" href="<?= site_url('public/css/style.css') ?>" />
-        <link rel="shortcut icon" href="<?= site_url('public/img/judge.ico') ?>" />
+        <link rel="shortcut icon" href="<?= site_url('public/img/logo.ico') ?>" />
         <link rel="stylesheet" href="<?= site_url('public/css/bootstrap-select.min.css')?>">
         <meta charset="utf-8">
         <script src="<?= site_url('public/js/jquery-3.1.1.min.js') ?>"></script>
@@ -33,13 +33,13 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?= site_url() ?>"><span><img src="<?= site_url() ?>public/img/balanca.png" height="20" width="20"/></span>&nbsp;<span>Hosang</span></a>
+                    <a class="navbar-brand" href="<?= site_url() ?>"><span><img src="<?= site_url('public/img/logo.ico') ?>" height="30" width="30" style="margin-top: -5px;"/></span>&nbsp;<span>Hosang</span></a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="<?= base_url() ?>">Inicial <span class="sr-only"></span></a></li>
+                        <li class="active"><a href="<?= base_url('home/contato') ?>">Contato <span class="sr-only"></span></a></li>
                         <!--li><a href="#">Link</a></li-->
                         <?php if($this->session->userdata('usuario')) { ?>
                                 <li class="dropdown">
@@ -78,7 +78,7 @@
                             <input type="password" name="senha" class="form-control" size="8" placeholder="Senha">
                         </div>
                         <button type="submit" class="btn btn-success">Entrar</button-->
-                        <a href="<?= site_url('autenticacao') ?>" class="btn btn-success">Entrar</a>
+                        <a href="<?= site_url('autenticacao') ?>" class="btn btn-link">Acesso restrito</a>
                     </div>
                     <?php } ?>
                     <!-- Se usuário autenticado, exibe opções de usuário -->
