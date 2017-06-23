@@ -33,13 +33,13 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?= site_url() ?>"><span><img src="<?= site_url('public/img/logo.ico') ?>" height="30" width="30" style="margin-top: -5px;"/></span>&nbsp;<span>Hosang</span></a>
+                    <a class="navbar-brand" href="<?= site_url('Home') ?>"><span><img src="<?= site_url('public/img/logo.ico') ?>" height="30" width="30" style="margin-top: -5px;"/></span>&nbsp;<span>Hosang</span></a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="<?= base_url('home/contato') ?>">Contato <span class="sr-only"></span></a></li>
+                        <li class="active"><a href="<?= base_url('Home/contato') ?>">Contato <span class="sr-only"></span></a></li>
                         <!--li><a href="#">Link</a></li-->
                         <?php if($this->session->userdata('usuario')) { ?>
                                 <li class="dropdown">
