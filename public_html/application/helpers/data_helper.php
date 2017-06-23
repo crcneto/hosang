@@ -52,7 +52,7 @@ function inverte_data_w_exception($date) {
  * @return string
  */
 function getMes($mes=01){
-    $m = array(
+    $m = [
         '01'=>'Janeiro',
         '02'=>'Fevereiro',
         '03'=>'Março',
@@ -65,7 +65,7 @@ function getMes($mes=01){
         '10'=>'Outubro',
         '11'=>'Novembro',
         '12'=>'Dezembro'
-    );
+    ];
     
     return $m[$mes];
 }

@@ -10,7 +10,7 @@ class Home extends CI_Controller {
     }
 
     public function contato() {
-        $toView = array();
+        $toView = [];
         if($this->session->flashdata("req")){
             $toView['req'] = $this->session->flashdata("req");
         }
@@ -20,7 +20,7 @@ class Home extends CI_Controller {
     }
     
     public function send(){
-        $toView = array();
+        $toView = [];
         
         try{
             $nome = $this->input->post('nome');

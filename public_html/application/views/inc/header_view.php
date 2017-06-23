@@ -33,7 +33,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?= site_url('Home') ?>"><span><img src="<?= site_url('public/img/logo.ico') ?>" height="30" width="30" style="margin-top: -5px;"/></span>&nbsp;<span>Hosang</span></a>
+                    <a class="navbar-brand" href="<?= site_url() ?>"><span><img src="<?= site_url('public/img/logo.ico') ?>" height="30" width="30" style="margin-top: -5px;"/></span>&nbsp;<span>Hosang</span></a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
