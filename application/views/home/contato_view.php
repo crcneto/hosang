@@ -1,6 +1,6 @@
 <div class="container">
     <div class="col-md-3"></div>
-    <div class="col-md-6">
+    <div class="panel panel-default col-md-6">
         <h2 class="text-center">Contato</h2>
         <p class="">Entre em contato através dos telefones: <span style="font-weight: bolder;">(54) 3045.2215 / (54) 3632.6007</span></p>
         <p class="">E-mail: <a href="mailto:advocacia@hosang.adv.br">advocacia@hosang.adv.br</a> </p>
