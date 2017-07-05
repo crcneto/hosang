@@ -25,7 +25,7 @@
                     <label>Mensagem</label>
                     <textarea name="mensagem" style="resize: none;" rows="6" class="form-control"><?php if(isset($req['mensagem'])){echo $req['mensagem'];}?></textarea>
                     <br>
-                    <div class="text-right"><?= btn("Enviar", "primary") ?></div>
+                    <div class="text-right"><?= btn("Enviar", "success") ?></div>
                 </form>
             </div>
     </div>
